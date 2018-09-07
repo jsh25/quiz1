@@ -12,8 +12,7 @@ $padding: 10px;
 }
 
 header {
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include border;
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
@@ -37,16 +36,14 @@ h1 {
 }
 
 #content {
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include border;
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
 }
 
 #list{
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include border;
     background-color: $background;
 }
 
@@ -78,8 +75,7 @@ p{
 }
 
 footer {
-    border: 2px solid #064277;
-    border-radius: 20px;
+    @include border;
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
