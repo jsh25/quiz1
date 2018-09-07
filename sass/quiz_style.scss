@@ -6,13 +6,17 @@ $mainfont: sans-serif;
 $left: 50px;
 $padding: 10px;
 
-@mixin border {
+$size: 2px;
+$bordercolor: #064277;
+$radius: 20px;
+
+@mixin border($size, $bordercolor, $radius) {
     border: 2px solid #064277;
     border-radius: 20px;
 }
 
 header {
-    @include border;
+    @include border($size, $bordercolor, $radius);
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
@@ -36,14 +40,14 @@ h1 {
 }
 
 #content {
-    @include border;
+    @include border($size, $bordercolor, $radius);
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
 }
 
 #list{
-    @include border;
+    @include border($size, $bordercolor, $radius);
     background-color: $background;
 }
 
@@ -75,7 +79,7 @@ p{
 }
 
 footer {
-    @include border;
+    @include border($size, $bordercolor, $radius);
     margin: 10px auto;
     padding: $padding;
     background-color: $background;
